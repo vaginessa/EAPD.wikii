@@ -8,7 +8,7 @@ Evil AP with a different BSSID address Evil AP with the same BSSID as the legiti
 
 Requirements:
 
-Openwrt 15.x and above but recommend running it on a wifi-pineapple
+Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with 2.5.4
 
 Aircrack-ng suite
 
