@@ -8,7 +8,9 @@ Evil AP with a different BSSID address Evil AP with the same BSSID as the legiti
 
 Requirements:
 
-Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with 2.5.4
+Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4
+
+(If you have a low memory device like the Nano then you need to add external storage and use Extroot to have enough space for a full python install. Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration)
 
 Aircrack-ng suite
 
@@ -16,7 +18,7 @@ Aircrack-ng suite
 
 MySQL
 
-(edit /etc/init.d/mysqld by adding --skip-grant-tables because the mysqld on openwrt doesn't have working way to run mysql_secure_install)
+(edit /etc/init.d/mysqld by adding --skip-grant-tables because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install)
 
 Python
 
