@@ -14,7 +14,8 @@ Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with f
 
 Aircrack-ng suite
 
-     (Your wireless card must be supported by Aircrack-ng. Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy)
+     (Your wireless card must be supported by Aircrack-ng.
+     Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy)
 
 MySQL
 
