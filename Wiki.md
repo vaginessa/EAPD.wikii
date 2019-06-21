@@ -10,23 +10,23 @@ Requirements:
 
 Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4
 
-(If you have a low memory device like the Nano then you need to add external storage and use Extroot to have enough space for a full python install. Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration)
+     (If you have a low memory device like the Nano then you need to add external storage and use Extroot to have enough space for a full python install. Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration)
 
-     Aircrack-ng suite
+Aircrack-ng suite
 
-(Your wireless card must be supported by Aircrack-ng. Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy)
+     (Your wireless card must be supported by Aircrack-ng. Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy)
 
-     MySQL
+MySQL
 
-(edit /etc/init.d/mysqld by adding --skip-grant-tables because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install, then run mysql_install_db --force once)
+     (edit /etc/init.d/mysqld by adding --skip-grant-tables because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install, then run mysql_install_db --force once)
 
-     Python
+Python
 
-Install Python libraries: MySQLdb, Scapy, and Netaddr
+     Install Python libraries: MySQLdb, Scapy, and Netaddr
 
-(ex. pip install scapy)
+          (ex. pip install scapy)
 
-     Git and Git-http
+Git and Git-http
 
 Once you have the pre-requisites installed begin by cloning the git
 
