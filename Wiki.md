@@ -14,34 +14,35 @@ Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with f
 
 Aircrack-ng suite
 
-     (Your wireless card must be supported by Aircrack-ng.
-     Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy)
+     Your wireless card must be supported by Aircrack-ng.
+     Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy
 
 MySQL
 
-     (edit /etc/init.d/mysqld by adding --skip-grant-tables because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install, then run mysql_install_db --force once)
+     edit /etc/init.d/mysqld by adding --skip-grant-tables because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install,
+     then run mysql_install_db --force once
 
 Python
 
      Install Python libraries: MySQLdb, Scapy, and Netaddr
 
-          (ex. pip install scapy)
+     (ex. pip install scapy)
 
 Git and Git-http
 
 Once you have the pre-requisites installed begin by cloning the git
 
-(Git clone Https://github.com/0mniteck/EvilAPDefender)
+     Git clone Https://github.com/0mniteck/EvilAPDefender
 
-Stop cron /etc/init.d/cron stop
+     Stop cron /etc/init.d/cron stop
 
-Move CRONTABS to /etc/crontabs/root
+     Move CRONTABS to /etc/crontabs/root
 
-Move EAPD to /etc/init.d/eapd
+     Move EAPD to /etc/init.d/eapd
 
-(make sure its disabled by running /etc/init.d/eapd disable along with /etc/init.d/mysqld disable)
+     Make sure its disabled by running /etc/init.d/eapd disable along with /etc/init.d/mysqld disable
 
-Then chmod 744 /etc/init.d/eapd and chmod +x /etc/init.d/eapd
+     Then chmod 744 /etc/init.d/eapd and chmod +x /etc/init.d/eapd
 
 Run Learning Mode before starting /etc/init.d/cron
 
