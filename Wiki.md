@@ -28,7 +28,7 @@ Install Python libraries: MySQLdb, Scapy, and Netaddr
 
 Stop cron /etc/init.d/cron stop
 
-Move CRONTABS to /etc/crontabs/root and symlink to /etc/crontab
+Move CRONTABS to /etc/crontabs/root
 
 Move EAPD to /etc/init.d/eapd and make sure its disabled along with mysqld 
 
