@@ -10,8 +10,8 @@ Requirements:
 
 Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4
 
-     If you have a low memory device like the Nano then you need to add external storage and use Extroot to have 
-     enough space for a full python install.
+     If you have a low memory device like the Nano then you need to add external storage,
+     and use Extroot to have enough space for a full python install.
      Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration
 
 Aircrack-ng suite
@@ -23,7 +23,7 @@ MySQL
 
      edit /etc/init.d/mysqld by adding --skip-grant-tables,
      because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install,
-     then run mysql_install_db --force once
+     then run mysql_install_db --force
 
 Python
 
