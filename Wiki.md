@@ -13,6 +13,7 @@ Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with f
      If you have a low memory device like the Nano then you need to add external storage,
      and use Extroot to have enough space for a full python install.
      Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration
+     But even with 'nice -n 19' you may have stability issues with an external extroot.
 
 Aircrack-ng suite
 
