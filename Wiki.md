@@ -40,7 +40,7 @@ MySQL
 
      edit /etc/init.d/mysqld by adding --skip-grant-tables,
      because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install,
-     then run mysql_install_db --force
+     run mkdir /mnt/data/ && mkdir /mnt/data/mysql/ then run mysql_install_db --force
 
 Python
 
