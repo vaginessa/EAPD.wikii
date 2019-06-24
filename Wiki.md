@@ -54,11 +54,11 @@ Git and Git-http
 
      Move CRONTABS to /etc/crontabs/root
 
-     Move MYSQLD and EAPDD to /etc/init.d/eapd
+     Move MYSQLD and EAPDD to /etc/init.d/
 
-     Make sure its disabled by running /etc/init.d/eapd disable along with /etc/init.d/mysqld disable
+     Make sure its disabled by running /etc/init.d/eapdd disable along with /etc/init.d/mysqld disable
 
-     Then run chmod 744 /etc/init.d/eapd && chmod +x /etc/init.d/eapd
+     Then run chmod 744 /etc/init.d/eapdd && chmod +x /etc/init.d/eapdd
 
      And run chmod 744 /etc/init.d/mysqld && chmod +x /etc/init.d/mysqld
 
