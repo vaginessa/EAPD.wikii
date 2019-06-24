@@ -6,6 +6,22 @@ The tool is able to discover Evil APs using one of the following characteristics
 
 Evil AP with a different BSSID address Evil AP with the same BSSID as the legitimate AP but a different attribute (including: channel, cipher, privacy protocol, and authentication) Evil AP with the same BSSID and attributes as the legitimate AP but different tagged parameter - mainly different OUI (tagged parameters are additional values sent along with the beacon frame. Currently no software based AP gives the ability to change these values. Generally software based APs are so poor in this area). Whenever an Evil AP is discovered the tool will alert the admin through email. Additionally the tool will enter into preventive mode in which the tool will DoS the users of the legitimate wireless network from connecting to the discovered Evil AP. The tool can be configured easily by starting in what we call “Learning Mode”. In this mode you can whitelist your legitimate network. This can be done by following the wizards during the Learning Mode. You can also configure the preventive mode and admin notification from there as well. Finally, you need to start the /etc/init.d/EAPD in order to start discovering Evil APs.
 
+From a clean install just issue these few commands to run the setup.
+
+     cd
+
+     opkg update && opkg install git git-http
+
+     git clone https://github.com/0mniteck/EvilAPDefender
+
+     cd EvilAPDefender
+
+     chmod +x INSTALL.sh
+
+     ./INSTALL.sh
+
+If INSTALL.sh fails for some reason or you need an Extroot you need to manualy install using this guide. 
+
 Requirements:
 
 Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4
@@ -34,21 +50,19 @@ Python
 
 Git and Git-http
 
-Once you have the pre-requisites installed begin by cloning the git
-
-     Git clone Https://github.com/0mniteck/EvilAPDefender
-
-     Stop cron /etc/init.d/cron stop
+     Stop Cron /etc/init.d/cron stop
 
      Move CRONTABS to /etc/crontabs/root
 
-     Move EAPD to /etc/init.d/eapd
+     Move MYSQLD and EAPDD to /etc/init.d/eapd
 
      Make sure its disabled by running /etc/init.d/eapd disable along with /etc/init.d/mysqld disable
 
-     Then chmod 744 /etc/init.d/eapd and chmod +x /etc/init.d/eapd
+     Then run chmod 744 /etc/init.d/eapd && chmod +x /etc/init.d/eapd
 
-Run Learning Mode before starting /etc/init.d/cron
+     And run chmod 744 /etc/init.d/mysqld && chmod +x /etc/init.d/mysqld
+
+Run Learning Mode before starting /etc/init.d/cron by issuing /etc/init.d/eapdd L
 
 Learning Mode: This Mode can be invoked with the “-L” switch. When running the tool in this mode the tool will start by scanning for the available wireless networks. Then it lists all the found wireless networks with whitelisted APs colored with green. It also lists the whitelist APs and OUIs (tagged parameters). The tool also provides several options which allow you to add/remove SSIDs into/from whitelist. You need to whitelist your SSID first before running the tool in the Normal Mode. Moreover, you can configure Preventive Mode from “Update options -> Configure Preventive Mode”. First you need to set the Deauthentication time (in seconds) into a number bigger than 0 (setting the value to 0 will disable this mode). Then you need to set the number of time to repeat the attack. This is so important for attacking more than Evil AP because the tool cannot attack all of them in the same time (how can you attack several APs on different channels? Later on we will improve the tool and allow it to attack (in the same time) several APs in the same channel). The tool will attack the first Evil AP for specified deauthentication time then it will stop and attack the second one and so on. Be careful from increasing the Deatuth time so much because this may attack only one AP and leaving the others running. My recommendation is to set the Deauth time to something suitable such as 10 seconds and increasing the repeat time. Finally, you can configure admin notification by setting admin email, SMPT server address, SMTP username (complete email address) for authentication purpose, and SMTP password. You can use any account on Gmail or your internal SMTP server account.
 
