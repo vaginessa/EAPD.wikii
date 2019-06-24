@@ -56,11 +56,11 @@ Git and Git-http
 
      Move MYSQLD and EAPDD to /etc/init.d/
 
-     Make sure its disabled by running /etc/init.d/eapdd disable along with /etc/init.d/mysqld disable
-
      Then run chmod 744 /etc/init.d/eapdd && chmod +x /etc/init.d/eapdd
 
      And run chmod 744 /etc/init.d/mysqld && chmod +x /etc/init.d/mysqld
+
+     Make sure its disabled by running /etc/init.d/eapdd disable along with /etc/init.d/mysqld disable
 
 Run Learning Mode before starting /etc/init.d/cron by issuing /etc/init.d/eapdd L
 
