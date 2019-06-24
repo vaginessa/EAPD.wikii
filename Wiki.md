@@ -6,7 +6,7 @@ The tool is able to discover Evil APs using one of the following characteristics
 
 Evil AP with a different BSSID address Evil AP with the same BSSID as the legitimate AP but a different attribute (including: channel, cipher, privacy protocol, and authentication) Evil AP with the same BSSID and attributes as the legitimate AP but different tagged parameter - mainly different OUI (tagged parameters are additional values sent along with the beacon frame. Currently no software based AP gives the ability to change these values. Generally software based APs are so poor in this area). Whenever an Evil AP is discovered the tool will alert the admin through email. Additionally the tool will enter into preventive mode in which the tool will DoS the users of the legitimate wireless network from connecting to the discovered Evil AP. The tool can be configured easily by starting in what we call “Learning Mode”. In this mode you can whitelist your legitimate network. This can be done by following the wizards during the Learning Mode. You can also configure the preventive mode and admin notification from there as well.
 
-From a clean install just issue these few commands to run the setup.
+From a clean install just issue these following commands to run the setup:
 
      cd
 
@@ -50,11 +50,15 @@ Python
 
 Git and Git-http
 
+     Clone Git
+
      Stop Cron /etc/init.d/cron stop
 
      Move CRONTABS to /etc/crontabs/root
 
      Move MYSQLD and EAPDD to /etc/init.d/
+
+     Move EvilAPDefender.py to /root/
 
      Then run chmod 744 /etc/init.d/eapdd && chmod +x /etc/init.d/eapdd
 
