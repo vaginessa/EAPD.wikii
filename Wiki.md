@@ -52,6 +52,8 @@ Python and python-mysql
 
      (ex. pip install scapy)
 
+     On a reinstall pip will fail with this error code: https://stackoverflow.com/questions/28210269/importerror-cannot-import-name-main-when-running-pip-version-command-in-windo
+
 Git and Git-http
 
      Clone Git
