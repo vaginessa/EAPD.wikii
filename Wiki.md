@@ -28,11 +28,10 @@ Requirements:
 
 Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4
 
-     If you have a low memory device like the Nano then you need to add external storage,
-     and use Extroot to have enough space for a full python install.
+     If you have a low memory device like the Wifi-Pineapple Nano then you need to add external storage,
+     and use extroot to have enough space for a full python installation.
      Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration
      But even with 'nice -n 19' you may have stability issues with an external extroot.
-     For Wifi-Pineapple Nano Installs remove '| tee -a /root/eapd.log' from line 102 in EAPD.py
 
 Aircrack-ng suite
 
