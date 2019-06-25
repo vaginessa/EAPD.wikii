@@ -22,7 +22,7 @@ From a clean install just issue these following commands to run the setup:
 
      ./INSTALL.sh
 
-If INSTALL.sh fails for some reason or you need an Extroot you need to manualy install using this guide. 
+If INSTALL.sh fails for some reason or you need to add an external extroot then you need to manualy install using this guide.
 
 Requirements:
 
