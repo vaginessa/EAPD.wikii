@@ -35,7 +35,7 @@ Openwrt 15.x and above (Recommend running it on a Wifi-Pineapple Tetra with firm
      Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration
      But even with 'nice -n 19' you may have stability issues with an external extroot.
 
-Aircrack-ng suite
+Aircrack-ng and Airmon-ng
 
      Your wireless card must be supported by Aircrack-ng.
      Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy
