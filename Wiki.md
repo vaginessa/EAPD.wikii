@@ -44,9 +44,9 @@ MySQL
      because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install,
      run mkdir /mnt/data/ && mkdir /mnt/data/mysql/ then run mysql_install_db --force
 
-Python
+Python and python-mysql
 
-     Install Python libraries: MySQLdb, Scapy, and Netaddr
+     Install Python libraries: Scapy, and Netaddr
 
      (ex. pip install scapy)
 
