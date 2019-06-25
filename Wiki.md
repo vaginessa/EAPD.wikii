@@ -6,7 +6,7 @@ The tool is able to discover Evil APs using one of the following characteristics
 
 Evil AP with a different BSSID address Evil AP with the same BSSID as the legitimate AP but a different attribute (including: channel, cipher, privacy protocol, and authentication) Evil AP with the same BSSID and attributes as the legitimate AP but different tagged parameter - mainly different OUI (tagged parameters are additional values sent along with the beacon frame. Currently no software based AP gives the ability to change these values. Generally software based APs are so poor in this area). Whenever an Evil AP is discovered the tool will alert the admin through email. Additionally the tool will enter into preventive mode in which the tool will DoS the users of the legitimate wireless network from connecting to the discovered Evil AP. The tool can be configured easily by starting in what we call “Learning Mode”. In this mode you can whitelist your legitimate network. This can be done by following the wizards during the Learning Mode. You can also configure the preventive mode and admin notification from there as well.
 
-This release comes with an Installer and support for all OpenWrt 15.x/^ Devices that have enough internal storage to run without an added extroot, ie. the Wifi-Pineapple Tetra. The next release will support that as well as have niceness options for slower devices. And will have a functional module for the PineAP Management Interface.
+This release comes with an Installer and support for all OpenWrt 15.x/^ Devices that have enough internal storage to run without an added extroot, ie. the Wifi-Pineapple Tetra. A module will soon be written to add easy access on the Wifi-Pineapple PineAP Management Interface. And adding niceness option for Extroot or Wifi-Pineapple Nano installs to prevent errors.
 
 From a clean install just issue these following commands to run the setup:
 
@@ -32,6 +32,7 @@ Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with f
      and use Extroot to have enough space for a full python install.
      Check the following URL: https://openwrt.org/docs/guide-user/additional-software/extroot_configuration
      But even with 'nice -n 19' you may have stability issues with an external extroot.
+     For Wifi-Pineapple Nano Installs remove '| tee -a /root/eapd.log' from line 102 in EAPD.py
 
 Aircrack-ng suite
 
