@@ -26,7 +26,7 @@ If INSTALL.sh fails for some reason or you need to add an external extroot then 
 
 Requirements:
 
-Openwrt 15.x and above but recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4
+Openwrt 15.x and above (Recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4)
 
 40MB Minimum Free Space (100MB Recommended)
 
