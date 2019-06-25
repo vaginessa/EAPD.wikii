@@ -40,13 +40,14 @@ Aircrack-ng suite
      Your wireless card must be supported by Aircrack-ng.
      Check the following URL: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy
 
-MySQL
+MySQL-Server and procps-ng-pkill
 
+     If you are using 18.x and up also install mariadb-client mariadb-server-plugin-auth-socket
      edit /etc/init.d/mysqld by adding --skip-grant-tables,
      because the mysqld on openwrt doesn't have a workable way to run mysql_secure_install,
      run mkdir /mnt/data/ && mkdir /mnt/data/mysql/ then run mysql_install_db --force
 
-Python and python-mysql
+Python, Python-PiP, and Python-MySQL
 
      Install Python libraries: NetAddr and Scapy by running 'pip install netaddr scapy'
      On a reinstall pip will fail with an error code here is the fix: https://stackoverflow.com/a/49900741
