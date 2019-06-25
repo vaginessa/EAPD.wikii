@@ -8,7 +8,7 @@ Evil AP with a different BSSID address Evil AP with the same BSSID as the legiti
 
 This release comes with an Installer and support for all OpenWrt 15.x/^ Devices that have enough internal storage to run without an added extroot, ie. the Wifi-Pineapple Tetra. A module will soon be written to add easy access on the Wifi-Pineapple PineAP Management Interface. And adding niceness option for external extroot or Wifi-Pineapple Nano installs to avoid errors.
 
-From a clean install just issue these following commands to run the setup:
+From a clean install just issue these following commands to run the installer:
 
      cd
 
@@ -18,7 +18,7 @@ From a clean install just issue these following commands to run the setup:
 
      cd EvilAPDefender
 
-     chmod +x INSTALL.sh
+     chmod 744 INSTALL.sh && chmod +x INSTALL.sh 
 
      ash ./INSTALL.sh
 
@@ -73,3 +73,13 @@ Run Learning Mode before starting /etc/init.d/cron by issuing /etc/init.d/eapdd 
 Learning Mode: This Mode can be invoked with the “L” switch. When running the tool in this mode the tool will start by scanning for the available wireless networks. Then it lists all the found wireless networks with whitelisted APs colored with green. It also lists the whitelist APs and OUIs (tagged parameters). The tool also provides several options which allow you to add/remove SSIDs into/from whitelist. You need to whitelist your SSID first before running the tool in the Normal Mode. Moreover, you can configure Preventive Mode from “Update options -> Configure Preventive Mode”. First you need to set the Deauthentication time (in seconds) into a number bigger than 0 (setting the value to 0 will disable this mode). Then you need to set the number of time to repeat the attack. This is so important for attacking more than Evil AP because the tool cannot attack all of them in the same time (how can you attack several APs on different channels? Later on we will improve the tool and allow it to attack (in the same time) several APs in the same channel). The tool will attack the first Evil AP for specified deauthentication time then it will stop and attack the second one and so on. Be careful from increasing the Deatuth time so much because this may attack only one AP and leaving the others running. My recommendation is to set the Deauth time to something suitable such as 10 seconds and increasing the repeat time. Finally, you can configure admin notification by setting admin email, SMPT server address, SMTP username (complete email address) for authentication purpose, and SMTP password. You can use any account on Gmail or your internal SMTP server account.
 
 Normal Mode: This is the mode in which the tool starts to discover Evil APs and notify the administrator whenever one is discovered. This mode can be invoked by "start" switch.
+
+just issue these following commands to run the uninstaller:
+
+     cd
+
+     cd EvilAPDefender
+
+     chmod 744 UNINSTALL.sh && chmod +x UNINSTALL.sh 
+
+     ash ./UNINSTALL.sh
