@@ -28,7 +28,7 @@ Requirements:
 
 Openwrt 15.x and above (Recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4)
 
-40MB Minimum Free Space (100MB Recommended)
+30MB Minimum Free Space (50MB Recommended)
 
      If you have a low memory device like the Wifi-Pineapple Nano then you need to add external storage,
      and use extroot to have enough space for a full python installation.
