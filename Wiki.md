@@ -48,11 +48,8 @@ MySQL
 
 Python and python-mysql
 
-     Install Python libraries: Scapy, and Netaddr
-
-     (ex. pip install scapy)
-
-     On a reinstall pip will fail with this error code: https://stackoverflow.com/questions/28210269/importerror-cannot-import-name-main-when-running-pip-version-command-in-windo
+     Install Python libraries: NetAddr and Scapy by running 'pip install netaddr scapy'
+     On a reinstall pip will fail with an error code here is the fix: https://stackoverflow.com/a/49900741
 
 Git and Git-http
 
