@@ -20,7 +20,7 @@ From a clean install just issue these following commands to run the setup:
 
      chmod +x INSTALL.sh
 
-     ./INSTALL.sh
+     ash ./INSTALL.sh
 
 If INSTALL.sh fails for some reason or you need to add an external extroot then you need to manualy install using this guide.
 
