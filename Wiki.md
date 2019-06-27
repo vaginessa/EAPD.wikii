@@ -12,7 +12,7 @@ From a clean install just issue these following commands to run the installer:
 
      cd
 
-     opkg update && opkg install git git-http
+     opkg update && opkg install git-http
 
      git clone https://github.com/0mniteck/EvilAPDefender
 
