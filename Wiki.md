@@ -20,7 +20,7 @@ From a clean install just issue these following commands to run the installer:
 
      chmod 744 INSTALL.sh && chmod +x INSTALL.sh 
 
-     ash ./INSTALL.sh
+     ./INSTALL.sh
 
 If INSTALL.sh fails for some reason or you need to add an external extroot then you need to manualy install using this guide.
 
@@ -87,4 +87,4 @@ Just issue these following commands to run the uninstaller:
 
      chmod 744 UNINSTALL.sh && chmod +x UNINSTALL.sh 
 
-     ash ./UNINSTALL.sh
+     ./UNINSTALL.sh
