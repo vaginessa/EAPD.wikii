@@ -1,4 +1,4 @@
-Evil Access Point Defender (EAPD) is an application that helps wireless network admins discover and prevent bad access points from attacking wireless network users. A configurable intrusion detection system for wifi.
+Evil Access Point Defender (EAPD) is an application that helps wireless network admins discover and prevent bad access points from attacking wireless network users. A configurable intrusion detection/intervention system for wifi.
 
 The application can be run in regular intervals to protect your wireless network from Evil Twin like attacks. By configuring the tool you can get notifications sent to your email whenever an evil access point is discovered. Additionally you can configure the tool to perform DoS on the legitimate wireless users to prevent them from connecting to the discovered evil AP in order to give the administrator more time to react. However, notice that the DoS will only be performed for evil APs which have the same SSID but different BSSID (AP’s MAC address) or running on a different channel. This is to avoid DoS your legitimate network.
 
