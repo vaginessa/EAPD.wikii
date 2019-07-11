@@ -50,7 +50,8 @@ MySQL-Server and Procps-ng-pkill
 Python, Python-PiP, and Python-MySQL
 
      Install Python libraries: NetAddr and Scapy by running 'pip install netaddr scapy'
-     On a reinstall pip will fail with an error code here is the fix: https://stackoverflow.com/a/49900741
+     On a reinstall pip will fail with an error code,
+     here is the fix: https://stackoverflow.com/a/49900741
 
 Git and Git-http
 
@@ -77,7 +78,7 @@ Learning Mode: This Mode can be invoked with the “L” switch. When running th
 Scanning Mode: This is the mode in which the tool starts to discover Evil APs and notify the administrator whenever one is discovered.
 
      This mode can be invoked with '/etc/init.d/eapdd start'
-     or schedule regular runs by invoking '/etc/init.d/cron enable'
+     or schedule regular runs by invoking '/etc/init.d/cron enable && reboot'
 
 Just issue these following commands to run the uninstaller:
 
