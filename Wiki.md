@@ -6,7 +6,7 @@ The tool is able to discover Evil APs using one of the following characteristics
 
 Evil AP with a different BSSID address Evil AP with the same BSSID as the legitimate AP but a different attribute (including: channel, cipher, privacy protocol, and authentication) Evil AP with the same BSSID and attributes as the legitimate AP but different tagged parameter - mainly different OUI (tagged parameters are additional values sent along with the beacon frame. Currently no software based AP gives the ability to change these values. Generally software based APs are so poor in this area). Whenever an Evil AP is discovered the tool will alert the admin through email. Additionally the tool will enter into preventive mode in which the tool will DoS the users of the legitimate wireless network from connecting to the discovered Evil AP. The tool can be configured easily by starting in what we call “Learning Mode”. In this mode you can whitelist your legitimate network. This can be done by following the wizards during the Learning Mode. You can also configure the preventive mode and admin notification from there as well.
 
-This release comes with an Installer and support for all OpenWrt 15.x/^ Devices that have enough internal storage to run without an added extroot, ie. the Wifi-Pineapple Tetra. A module will soon be written to add easy access on the Wifi-Pineapple PineAP Management Interface. And adding niceness option for external extroot or Wifi-Pineapple Nano installs to avoid errors.
+This release comes with an installer and support for all OpenWrt 15.x/^ Devices, ie. the Wifi-Pineapple Tetra. A module will soon be written to add easy access on the Wifi-Pineapple PineAP Management Interface.
 
 From a clean install just issue these following commands to run the installer:
 
@@ -28,7 +28,7 @@ Requirements:
 
 Openwrt 15.x and above (Recommend running it on a Wifi-Pineapple Tetra with firmware 2.5.4)
 
-35MB Minimum Free Space Required (50MB Minimum Free Space Recommended)
+30MB Minimum Free Space Required (50MB Minimum Free Space Recommended)
 
      If you have a low memory device like the Wifi-Pineapple Nano then you need to add external storage,
      and use extroot to have enough space for a full python installation.
