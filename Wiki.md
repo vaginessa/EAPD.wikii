@@ -37,8 +37,6 @@ MySQL-Server
 Python, Python-PiP, and Python-MySQL
 
      Install Python libraries: NetAddr and Scapy by running 'pip install netaddr scapy'
-     On a reinstall pip will fail with an error code,
-     here is the fix: https://stackoverflow.com/a/49900741
 
 Git-http
 
